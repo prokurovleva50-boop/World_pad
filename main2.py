@@ -12,7 +12,7 @@ if os.path.exists(directory):
         notes = json.load(file)
 else:
     notes = {
-        'Welcome': {'text': 'Добро пожаловать!', 'tags': ['Приветствие']}
+        'Welcome': {'text': 'Добро пожаловать!!!', 'tags': ['Приветствие']}
     }
 
     with open(directory, 'w', encoding='utf-8')as file:
@@ -161,4 +161,5 @@ search_tag.clicked.connect(search)
 
 show_notes()
 window.show()
+
 app.exec_()
